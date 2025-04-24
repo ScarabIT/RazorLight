@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-      <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+      <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>      
   </PropertyGroup>
 
   <PropertyGroup>
@@ -15,32 +15,32 @@
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
-    <PackageReference Include="Microsoft.CodeAnalysis.Razor" Version="2.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Html.Abstractions" Version="2.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.Extensions" Version="2.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Language" Version="2.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" Version="2.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="2.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.1.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="2.1.0" />
-    <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="2.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Primitives" Version="2.1.0" />
-    <PackageReference Include="System.Buffers" Version="4.5.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Razor" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" />
+    <PackageReference Include="Microsoft.AspNetCore.Html.Abstractions" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.Extensions" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Language" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Runtime" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" />
+    <PackageReference Include="System.Buffers" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.Extensions" Version="6.0.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Razor" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Primitives" Version="6.0.0" />
-    <PackageReference Include="System.Buffers" Version="4.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.Extensions" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Razor" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" />
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Physical" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" />
+    <PackageReference Include="System.Buffers" />
   </ItemGroup>
 
   <ItemGroup>
