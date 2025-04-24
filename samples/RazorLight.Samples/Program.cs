@@ -28,7 +28,7 @@ namespace Samples.EntityFrameworkProject
 			string templateKey = "2";
 			var model = new TestViewModel { Name = "Johny", Age = 22 };
 
-#if (NETCOREAPP3_0 || NETCOREAPP3_1 || NET5_0)
+#if (NETCOREAPP3_0_OR_GREATER)
 			model.Age = 40;
 #endif
 			string result = engine.CompileRenderAsync(templateKey, model).Result;

@@ -56,7 +56,7 @@ namespace RazorLight
 			}
 
 
-#if (NETCOREAPP3_0 || NETCOREAPP3_1 || NET5_0)
+#if (NETCOREAPP3_0_OR_GREATER)
 			[System.Obsolete]
 #endif
 			public override RazorProjectItem GetItem(string path)
