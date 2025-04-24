@@ -2,19 +2,11 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net6.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <LangVersion>8.0</LangVersion>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <LangVersion>8.0</LangVersion>
-  </PropertyGroup>
-
+  
   <ItemGroup>
     <Compile Remove="Views\**" />
     <None Remove="*.cshtml" />
